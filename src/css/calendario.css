@@ -1,0 +1,114 @@
+#calendario {
+    background: linear-gradient(90deg, rgb(17, 4, 76), rgb(255, 255, 255, 0));
+    margin: 0;
+    padding: 0;
+}
+
+.noviembre,
+.diciembre {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+}
+
+.noviembre li,
+.diciembre li {
+    font-size: 2rem;
+    text-align: center;
+    height: 60px;
+    width: 90%;
+    margin-left: 0;
+    padding-left: 0;
+    background-color: rgba(251, 253, 254, 0.7);
+    margin-bottom: 10%;
+}
+
+.noviembre li:hover,
+.diciembre li:hover {
+    background-color: aliceblue;
+}
+
+.calendario-partidos {
+    display: none;
+
+}
+
+.noviembre li:hover ul,
+.diciembre li:hover ul {
+    display: block;
+}
+
+.noviembre h4,
+.diciembre h4 {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 60%;
+}
+
+.comienzo {
+    grid-column-start: 5;
+}
+
+.calendario h2 {
+    text-align: center;
+    color: rgb(245, 246, 251);
+    font-size: 4rem;
+
+}
+
+#diciembre h2 {
+    margin-top: 7vw;
+}
+
+.calendario li {
+    list-style: none;
+    border-style: double;
+    border-color: rgb(79, 7, 50);
+    color: rgb(22, 24, 130);
+    font-weight: bold;
+}
+
+
+.noviembre li ul,
+.diciembre li ul {
+    position: absolute;
+    text-align: center;
+    height: auto;
+    width: 16%;
+}
+
+.noviembre li ul li,
+.diciembre li ul li {
+    border: none;
+    font-size: 50%;
+    background-image: url(../img/partidos.jpg);
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
+#noviembre .dia,
+#diciembre .dia {
+    font-size: 1.3rem;
+    height: 30px;
+    border-color: maroon;
+    color: maroon;
+}
+
+@media (max-width: 800px) {
+
+    #noviembre .dia,
+    #diciembre .dia {
+        font-size: 1rem;
+    }
+
+    .noviembre li ul li,
+    .diciembre li ul li {
+        margin-bottom: 10px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+        
+    }
+}

@@ -1,0 +1,111 @@
+#planteles {
+    background: linear-gradient(45deg, rgb(6, 6, 6, 0.8), rgb(6, 6, 6, 0.5));
+    background-size: 100vw, 100vh;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+#grupoA,
+#grupoB,
+#grupoC,
+#grupoD,
+#grupoE,
+#grupoF,
+#grupoG,
+#grupoH {
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#grupoA div {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+
+}
+
+img {
+    width: 60%;
+    height: 80%;
+
+}
+
+h2 {
+    margin-top: 150px;
+}
+
+h1,
+h3,
+h2,
+a {
+    color: white;
+}
+
+#lista_grupos {
+    position: fixed;
+}
+
+#lista_grupos h3 {
+    margin-bottom: 60px;
+}
+
+#lista_grupos h3:hover,
+a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+@media (max-width: 800px) {
+
+    #grupoA,
+    #grupoB,
+    #grupoC,
+    #grupoD,
+    #grupoE,
+    #grupoF,
+    #grupoG,
+    #grupoH {
+        margin-top: 0;
+
+        margin-bottom: 15px;
+    }
+
+    img {
+        width: 95%;
+    }
+h1{
+    margin-top: 100px;
+}
+    h2 {
+        margin-top:70px;
+    }
+    h3{
+        margin-top:30px;
+    }
+
+    #lista_grupos {
+        position: fixed;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        height: 60px;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    #lista_grupos h3{
+        font-size: 1.1rem;
+        background: rgb(33, 1, 25);
+        border-style: double;
+    }
+
+
+}

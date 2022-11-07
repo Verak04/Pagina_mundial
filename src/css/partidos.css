@@ -1,0 +1,106 @@
+main {
+    width: 100vw;
+    height: 85vh;
+}
+
+.horarios-partidos {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 900px;
+}
+
+.horarios-partidos img {
+    width: 40%;
+    margin: 0;
+    margin-left: 30%;
+    padding-top: 30px;
+}
+
+.partidos h3 {
+    color: rgb(232, 237, 233);
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+.partidos h4 {
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+}
+
+.grupo1 {
+    float: left;
+    text-align: center;
+    padding: 0;
+    padding-left: 3%;
+    width: 45%;
+}
+
+.grupo2 {
+    float: right;
+    text-align: center;
+    padding: 0;
+    padding-right: 3%;
+    width: 45%;
+}
+
+.partidos p {
+    font-size: 1.3vw;
+    margin-top: 7px;
+    padding: 0;
+}
+
+.grupo1 div,
+.grupo2 div {
+    margin-top: 50px;
+    background: linear-gradient(45deg, rgb(18, 69, 33), rgba(252, 251, 251, 0.5));
+    padding: 2%;
+    box-sizing: border-box;
+    width: 90%;
+
+}
+
+@media (max-width: 800px) {
+    
+    .grupo1,
+    .grupo2 {
+        float: none;
+        padding-left: 3%;
+        width: 95%;
+    }
+
+    .horarios-partidos img {
+        width: 98%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .partidos h3,
+    h4 {
+        font-size: 5vw;
+    }
+
+    .partidos h4 {
+        font-size: 4vw;
+        margin-top: 5px;
+    }
+
+    .partidos p {
+        font-size: 4vw;
+        margin-top: 7px;
+        padding: 0;
+    }
+
+    .grupo1 div,
+    .grupo2 div {
+        margin-top: 10px;
+        background: linear-gradient(45deg, rgb(9, 38, 18), rgba(252, 251, 251, 0.5));
+        padding: 1%;
+    }
+    main{
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    }
